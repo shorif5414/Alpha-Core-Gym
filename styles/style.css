@@ -42,11 +42,14 @@ a {
 .prc{
     color:#E6533C
 }
+.sec{
+color: rgb(121, 118, 118);
+}
 .prbgc{
     background-color: #E6533C;
 }
-.sbgC{
-    background-color: #332d2d;
+.sbgc{
+    background-color: #181818;
 }
 main {
     padding: 2em;
@@ -146,10 +149,10 @@ main {
     border: 1px solid #4b464654;
     background-color: #332d2d4d;
     display: flex;
-    justify-content: center;
+    column-gap: 10px;
+    align-items: center;
     border-radius: 10px;
     padding: 10px;
-    flex-direction: column;
     backdrop-filter: blur(10px);
 }
 
@@ -163,9 +166,139 @@ main {
 }
 
 .habit-container img {
-    border: 3px solid #4b4646;
+    border: 6px solid #4b4646;
     border-radius: 100%;
     max-width: 300px;
     /* height: 100%; */
     margin: 20px auto;
+}
+
+/* traning section */
+.traning-con{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.traning-con2{
+    display: grid;
+    grid-template-columns: 4fr 2fr 3fr;
+}
+
+.traning-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+}
+
+.traning-card img {
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+.traning-card div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Calculation */
+.calculation{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 60px;
+}
+table{
+    border-collapse: collapse;
+    text-align: left;
+}
+th{
+    font-size: 20px;
+}
+td{
+    color: rgb(121, 118, 118);
+}
+table, th, td {
+    border: 1px solid #3d3b3b;
+}
+td, th {
+    padding: 10px 20px;
+    
+}
+
+.calculation input {
+    padding: 12px 20px;
+    border-radius: 6px;
+    background-color: #313030;
+    width: 100%;
+    outline: none;
+    border: 0px solid #000;
+    color: white
+}
+
+/* team section */
+.team-con {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    text-align: center;
+    padding: 30px 0;
+    padding: 20px;
+    background-color: #181818;
+    border-radius: 10px;
+}
+
+.team-card {
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.team-card img {
+    max-width: 350px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.team-card div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    background-color: #18181828;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+    text-align: left;
+}
+
+/* footer */
+.footer-con{
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    padding: 30px 0;
+    border-bottom: 1px solid #3d3b3b;
+    gap: 30px;
+}
+
+
+/* ================= responsive design ======================= */
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 480px) {
+    
 }
